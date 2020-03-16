@@ -6,13 +6,6 @@ using System;
 
 public class PriorityQueue<T>
 {
-    // From Red Blob: I'm using an unsorted array for this example, but ideally this
-    // would be a binary heap. Find a binary heap class:
-    // * https://bitbucket.org/BlueRaja/high-speed-priority-queue-for-c/wiki/Home
-    // * http://visualstudiomagazine.com/articles/2012/11/01/priority-queues-with-c.aspx
-    // * http://xfleury.github.io/graphsearch.html
-    // * http://stackoverflow.com/questions/102398/priority-queue-in-net
-
     private List<KeyValuePair<T, float>> elements = new List<KeyValuePair<T, float>>();
 
     public int Count
@@ -46,9 +39,6 @@ public class PriorityQueue<T>
 
 public class Astar
 {
-    private int gCost;
-    private int hCost;
-
     private const int STRAIGHT_MOVEMENT_COST = 10;
     private const int DIAGONAAL_MOVEMENT_COST = 14;
 
